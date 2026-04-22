@@ -4,6 +4,8 @@ import { appDescription } from './app/constants/index'
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  srcDir: 'app', // default
+
   vite: {
     plugins: [
       tailwindcss(),
@@ -45,7 +47,7 @@ export default defineNuxtConfig({
   },
 
   pinia: {
-    storesDirs: ['./app/stores/**'],
+    storesDirs: ['./stores/**'],
   },
 
   eslint: {
@@ -54,7 +56,7 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2025-08-01',
+  compatibilityDate: '2026-04-22',
 
   nitro: {
     preset: 'cloudflare-module',
