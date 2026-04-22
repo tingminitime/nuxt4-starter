@@ -14,7 +14,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Architecture
 
-This is a **Nuxt 4** starter template configured for **Cloudflare Workers** deployment with TailwindCSS v4.
+This is a **Nuxt 4** starter template with TailwindCSS v4.
 
 ### Core Stack
 - **Nuxt 4** - Full-stack Vue framework
@@ -37,7 +37,6 @@ This is a **Nuxt 4** starter template configured for **Cloudflare Workers** depl
 ### Key Configuration Details
 
 **Nuxt Config (`nuxt.config.ts`)**:
-- Configured for Cloudflare Workers deployment (`nitro.preset: 'cloudflare-module'`)
 - TailwindCSS v4 integrated via Vite plugin
 - Pinia stores directory: `./app/stores/**`
 - ESLint integration with standalone: false
@@ -51,11 +50,6 @@ This is a **Nuxt 4** starter template configured for **Cloudflare Workers** depl
 **Package Manager**: 
 - Uses **pnpm** exclusively (enforced via preinstall hook)
 - Minimum pnpm version: 10.0.0
-
-### Deployment
-- Configured for **Cloudflare Workers** via wrangler.jsonc
-- Build output: `.output/server/index.mjs`
-- Static assets: `.output/public`
 
 ### State Management Pattern
 Pinia stores use the composition API pattern with `defineStore(() => {})` syntax, not options API. All stores include HMR support via `acceptHMRUpdate`.
