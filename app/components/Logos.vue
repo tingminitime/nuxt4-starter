@@ -2,7 +2,7 @@
   <div
     class="
       grid grid-cols-3 place-content-center gap-x-2
-      md:grid-cols-[repeat(5,_minmax(100px,_auto))]
+      md:grid-cols-[repeat(5,minmax(100px,auto))]
     "
   >
     <NuxtLink

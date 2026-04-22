@@ -4,7 +4,7 @@
   >
     <li
       class="
-        flex rounded transition-all
+        flex rounded-sm transition-all
         hover:bg-gray-300/50
         dark:hover:bg-gray-700/50
       "
@@ -22,7 +22,7 @@
     </li>
     <li
       class="
-        flex rounded transition-all
+        flex rounded-sm transition-all
         hover:bg-gray-300/50
         dark:hover:bg-gray-700/50
       "
@@ -41,7 +41,7 @@
     </li>
     <li
       class="
-        flex rounded transition-all
+        flex rounded-sm transition-all
         hover:bg-gray-300/50
         dark:hover:bg-gray-700/50
       "
@@ -61,7 +61,8 @@
         class="
           text-sky-600
           hover:text-sky-500
-          dark:text-sky-500 dark:hover:text-sky-400
+          dark:text-sky-500
+          dark:hover:text-sky-400
         "
       >
         antfu/vitesse-nuxt

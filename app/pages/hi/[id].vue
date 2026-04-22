@@ -47,9 +47,10 @@ definePageMeta({
           >
             <NuxtLink
               class="
-                rounded bg-gray-200 px-2 py-1
+                rounded-sm bg-gray-200 px-2 py-1
                 hover:bg-gray-300
-                dark:bg-gray-600 dark:hover:bg-gray-700
+                dark:bg-gray-600
+                dark:hover:bg-gray-700
               "
               :to="`/hi/${otherName}`"
               replace

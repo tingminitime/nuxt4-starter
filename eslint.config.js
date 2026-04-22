@@ -1,46 +1,43 @@
 // @ts-check
 import antfu from '@antfu/eslint-config'
-// import tailwindcss from 'eslint-plugin-tailwindcss'
 import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss'
-import withNuxt from './.nuxt/eslint.config.mjs'
+import nuxt from './.nuxt/eslint.config.mjs'
 
-export default withNuxt(
-  antfu(
-    /* configures for antfu's config */
-    {
-      ignores: [
-        'node_modules/',
-        'dist/',
-        '.output/',
-        '.nuxt/',
-        '.storybook/',
-        'storybook-static',
-        '.github/',
-        'coverage',
-        '*.log',
-        'nuxt.d.ts',
-        '.DS_Store',
-        '.vscode/',
-        '**/*.md',
-        'netlify.toml',
-        'README.md',
-        'package.json',
-        'package-lock.json',
-        'babel.config.js',
-        '*.toml',
-        'graphql',
-        'types.ts',
-        'generated',
-        'components.d.ts',
-        'icons.d.ts',
-        'auto.d.ts',
-        'src-tauri',
-        'auto-imports.d.ts',
-        'components.d.ts',
-      ],
-    },
-    /* From the second arguments they are ESLint Flat Configs */
-  ),
+export default antfu(
+  /* configures for antfu's config */
+  {
+    ignores: [
+      'node_modules/',
+      'dist/',
+      '.output/',
+      '.nuxt/',
+      '.storybook/',
+      'storybook-static',
+      '.github/',
+      'coverage',
+      '*.log',
+      'nuxt.d.ts',
+      '.DS_Store',
+      '.vscode/',
+      '**/*.md',
+      'netlify.toml',
+      'README.md',
+      'package.json',
+      'package-lock.json',
+      'babel.config.js',
+      '*.toml',
+      'graphql',
+      'types.ts',
+      'generated',
+      'components.d.ts',
+      'icons.d.ts',
+      'auto.d.ts',
+      'src-tauri',
+      'auto-imports.d.ts',
+      'components.d.ts',
+    ],
+  },
+  /* From the second arguments they are ESLint Flat Configs */
   {
     // @see: https://github.com/schoero/eslint-plugin-better-tailwindcss?tab=readme-ov-file#rules
     plugins: {
@@ -56,7 +53,7 @@ export default withNuxt(
           printWidth: 80,
         },
       ],
-      'better-tailwindcss/no-unregistered-classes': [
+      'better-tailwindcss/no-unknown-classes': [
         'warn',
         {
           detectComponentClasses: true,
@@ -83,7 +80,6 @@ export default withNuxt(
         svg: 'always',
         math: 'always',
       }],
-      'no-unused-vars': 'warn',
       'unused-imports/no-unused-vars': [
         'warn',
         {
@@ -94,6 +90,7 @@ export default withNuxt(
         },
       ],
       'unused-imports/no-unused-imports': 'warn',
+      'no-unused-vars': 'warn',
       'no-console': 'warn',
       'node/prefer-global/process': 'off',
       'ts/no-unused-vars': [
@@ -107,4 +104,4 @@ export default withNuxt(
       ],
     },
   },
-)
+).append(nuxt())

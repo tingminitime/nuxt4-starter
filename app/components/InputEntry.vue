@@ -15,10 +15,11 @@ function go() {
       v-model="name"
       type="text"
       class="
-        w-64 rounded border border-gray-300 bg-transparent px-4 py-2 text-center
-        text-gray-600 outline-none
+        w-64 rounded-sm border border-gray-300 bg-transparent px-4 py-2
+        text-center text-gray-600 outline-none
         focus:border-gray-300
-        dark:border-gray-600 dark:text-gray-300 dark:focus:border-gray-600
+        dark:border-gray-600 dark:text-gray-300
+        dark:focus:border-gray-600
       "
       placeholder="What's your name?"
       autocomplete="off"
