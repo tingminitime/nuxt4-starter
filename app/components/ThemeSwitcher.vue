@@ -5,7 +5,7 @@ useHead({
   meta: [{
     id: 'theme-color',
     name: 'theme-color',
-    content: color.value === 'dark' ? '#282c34' : '#ffffff',
+    content: computed(() => color.value === 'dark' ? '#282c34' : '#ffffff'),
   }],
 })
 

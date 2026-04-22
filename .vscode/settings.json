@@ -48,12 +48,14 @@
     "postcss"
   ],
 
-  "tailwindCSS.validate": false,
-  "tailwindCSS.codeActions": false,
-
   // Other settings
   "files.associations": {
     "*.css": "postcss"
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.ignoreWords": [
+    "nuxt",
+    "vueuse",
+    "pinia",
+  ],
 }

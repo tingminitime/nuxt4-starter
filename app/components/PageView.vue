@@ -13,5 +13,3 @@ const timeAgo = useTimeAgo(() => data.value?.startAt || 0)
     <span>{{ timeAgo }}</span>
   </div>
 </template>
-
-<style scope></style>

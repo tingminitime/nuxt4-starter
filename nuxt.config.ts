@@ -4,8 +4,6 @@ import { appDescription } from './app/constants/index'
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  srcDir: 'app', // default
-
   vite: {
     plugins: [
       tailwindcss(),
@@ -22,12 +20,6 @@ export default defineNuxtConfig({
   ],
 
   css: ['~/assets/css/main.css'],
-
-  postcss: {
-    plugins: {
-      '@tailwindcss/postcss': {},
-    },
-  },
 
   app: {
     head: {
@@ -47,7 +39,7 @@ export default defineNuxtConfig({
   },
 
   pinia: {
-    storesDirs: ['./stores/**'],
+    storesDirs: ['./stores/**'], // default `srcDir` is `app/`
   },
 
   eslint: {

@@ -12,6 +12,7 @@
     >
       <img
         src="/icon-nuxt.svg"
+        alt="nuxt icon"
         class="inline-block size-16"
       >
       <span
@@ -22,9 +23,11 @@
       class="my-link flex flex-col items-center px-4 py-2"
       href="https://vitejs.dev/"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <img
         src="/icon-vite.svg"
+        alt="vite icon"
         class="size-16 p-2"
       >
       <span
@@ -39,6 +42,7 @@
     >
       <img
         src="/icon-tailwindcss.svg"
+        alt="tailwind icon"
         class="size-16 p-1"
       >
       <span
@@ -49,9 +53,11 @@
       class="my-link flex flex-col items-center px-4 py-2"
       href="https://pinia.vuejs.org/"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <img
         src="/icon-pinia.svg"
+        alt="pinia icon"
         class="size-16 p-1"
       >
       <span
@@ -62,9 +68,11 @@
       class="my-link flex flex-col items-center px-4 py-2"
       href="https://vueuse.org/"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <img
         src="/icon-vueuse.svg"
+        alt="vueuse icon"
         class="size-16 p-1"
       >
       <span

@@ -42,5 +42,3 @@ const { increment, decrement } = counterStore
     </button>
   </div>
 </template>
-
-<style scope></style>

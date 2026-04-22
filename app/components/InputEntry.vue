@@ -37,5 +37,3 @@ function go() {
     </button>
   </div>
 </template>
-
-<style scope></style>
